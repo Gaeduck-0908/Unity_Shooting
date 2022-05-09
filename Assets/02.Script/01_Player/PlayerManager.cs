@@ -10,8 +10,8 @@ public class PlayerManager : Singleton<PlayerManager>
     // 플레이어의 정의 관련 코드 작성 바람
 
     // 플레이어의 체력
-    private int Player_MaxHp;
-    private int Player_Hp;
+    public int Player_MaxHp;
+    public int Player_Hp;
 
     // 플레이어의 속도
     private float Player_Speed;
