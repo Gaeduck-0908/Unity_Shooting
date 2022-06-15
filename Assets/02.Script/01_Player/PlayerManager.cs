@@ -63,19 +63,19 @@ public class PlayerManager : Singleton<PlayerManager>
     // 플레이어 이동 관련 함수
     private void Player_Move()
     {
-        if(Input.GetKey(KeyCode.W))
+        if(Input.GetKey(KeyCode.UpArrow))
         {
             transform.Translate(Vector2.up * Player_Speed * Time.deltaTime);
         }  
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.DownArrow))
         {
             transform.Translate(Vector2.down * Player_Speed * Time.deltaTime);
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(Vector2.left * Player_Speed * Time.deltaTime);
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(Vector2.up * Player_Speed * Time.deltaTime);
         }
