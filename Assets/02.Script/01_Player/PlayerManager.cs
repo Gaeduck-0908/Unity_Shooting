@@ -10,11 +10,11 @@ public class PlayerManager : Singleton<PlayerManager>
     // 플레이어의 정의 관련 코드 작성 바람
 
     // 플레이어의 체력
-    public int Player_MaxHp;
+    public int Player_MaxHp = 100;
     public int Player_Hp;
 
     // 플레이어의 속도
-    private float Player_Speed;
+    private float Player_Speed = 10f;
 
     // 플레이어의 무적모드
     private bool Player_God;
@@ -41,6 +41,11 @@ public class PlayerManager : Singleton<PlayerManager>
     // 플레이어의 컴포넌트
     private Image Player_img;
     private Collider2D Player_col;
+    private Rigidbody2D rigid;
+
+    public GameObject idle;
+    public GameObject left;
+    public GameObject right;
 
     // 최초 한번 실행
     private void Start()
@@ -50,6 +55,7 @@ public class PlayerManager : Singleton<PlayerManager>
         Player_Hp = Player_MaxHp;
         Player_img = GetComponentInChildren<Image>();
         Player_col = GetComponent<Collider2D>();
+        rigid = GetComponent<Rigidbody2D>();
     }
 
     // 프레임 단위 실행
@@ -63,21 +69,33 @@ public class PlayerManager : Singleton<PlayerManager>
     // 플레이어 이동 관련 함수
     private void Player_Move()
     {
-        if(Input.GetKey(KeyCode.W))
+        float Horizontal = Input.GetAxis("Horizontal");
+        float Vertical = Input.GetAxis("Vertical");
+
+        Vector3 Position = transform.position;
+
+        Position.x += Horizontal * Time.deltaTime * Player_Speed;
+        Position.y += Vertical * Time.deltaTime * Player_Speed;
+
+        transform.position = Position;
+
+        if (Horizontal > 0)
         {
-            transform.Translate(Vector2.up * Player_Speed * Time.deltaTime);
-        }  
-        else if (Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.Translate(Vector2.down * Player_Speed * Time.deltaTime);
+            idle.SetActive(false);
+            left.SetActive(false);
+            right.SetActive(true);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Horizontal < 0)
         {
-            transform.Translate(Vector2.left * Player_Speed * Time.deltaTime);
+            idle.SetActive(false);
+            left.SetActive(true);
+            right.SetActive(false);
         }
-        else if (Input.GetKey(KeyCode.RightArrow))
+        else
         {
-            transform.Translate(Vector2.up * Player_Speed * Time.deltaTime);
+            idle.SetActive(true);
+            left.SetActive(false);
+            right.SetActive(false);
         }
     }
 
@@ -150,6 +168,7 @@ public class PlayerManager : Singleton<PlayerManager>
         Player_img.color = new Color(1, 1, 1, 0.5f);
         Invoke("Onbeatable", 1.5f);
     }
+
     // 피격 복구
     private void Onbeatable()
     {

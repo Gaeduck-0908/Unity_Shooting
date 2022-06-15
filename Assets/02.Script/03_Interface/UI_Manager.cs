@@ -16,7 +16,7 @@ public class UI_Manager : Singleton<UI_Manager>
     private void Update()
     {
         // 체력 받아오기
-        string hp = (PlayerManager.Instance.Player_Hp / PlayerManager.Instance.Player_MaxHp).ToString();
+        string hp = PlayerManager.Instance.Player_Hp.ToString();
 
         // 텍스트에 적용
         Player_HP_text.text = "HP : " + hp;
