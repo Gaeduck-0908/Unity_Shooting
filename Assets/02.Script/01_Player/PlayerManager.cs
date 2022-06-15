@@ -48,7 +48,7 @@ public class PlayerManager : Singleton<PlayerManager>
         Player_God = false;
         Player_Level = 1;
         Player_Hp = Player_MaxHp;
-        Player_img = GetComponent<Image>();
+        Player_img = GetComponentInChildren<Image>();
         Player_col = GetComponent<Collider2D>();
     }
 
@@ -63,7 +63,7 @@ public class PlayerManager : Singleton<PlayerManager>
     // 플레이어 이동 관련 함수
     private void Player_Move()
     {
-        if(Input.GetKey(KeyCode.UpArrow))
+        if(Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector2.up * Player_Speed * Time.deltaTime);
         }  
