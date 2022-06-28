@@ -51,7 +51,7 @@ public class PlayerManager : Singleton<PlayerManager>
     private void Start()
     {
         Player_God = false;
-        Player_Level = 1;
+        Player_Level = 2;
         Player_Hp = Player_MaxHp;
         Player_img = GetComponentInChildren<Image>();
         Player_col = GetComponent<Collider2D>();
