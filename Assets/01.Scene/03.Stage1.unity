@@ -1183,10 +1183,10 @@ MonoBehaviour:
   Player_MaxHp: 100
   Player_Hp: 0
   Player_Bullet_Lv1: {fileID: 1893815791439973912, guid: 0ee85aef12449e34092e9f5597fde347, type: 3}
-  Player_Bullet_Lv2: {fileID: 1893815791439973912, guid: 0ee85aef12449e34092e9f5597fde347, type: 3}
-  Player_Bullet_Lv3: {fileID: 1893815791439973912, guid: 0ee85aef12449e34092e9f5597fde347, type: 3}
-  Player_Bullet_Lv4: {fileID: 1893815791439973912, guid: 0ee85aef12449e34092e9f5597fde347, type: 3}
-  Player_Bullet_Lv5: {fileID: 1893815791439973912, guid: 0ee85aef12449e34092e9f5597fde347, type: 3}
+  Player_Bullet_Lv2: {fileID: 3995964213421333673, guid: 2b46e357375427a4782a354306bb69e7, type: 3}
+  Player_Bullet_Lv3: {fileID: 5862485819627569225, guid: b6e1909f13bd2554ca90709668bc2661, type: 3}
+  Player_Bullet_Lv4: {fileID: 8331535993409787022, guid: c84ad5bfab8d99e4da0494d1709bf1f4, type: 3}
+  Player_Bullet_Lv5: {fileID: 7830718166028570870, guid: d2a697401ea49054d97c130c52d3aaf2, type: 3}
   idle: {fileID: 1193337300}
   left: {fileID: 486742243}
   right: {fileID: 752809366}

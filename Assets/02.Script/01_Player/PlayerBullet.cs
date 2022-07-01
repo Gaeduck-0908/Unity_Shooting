@@ -40,7 +40,7 @@ public class PlayerBullet : MonoBehaviour
     {
         switch(col.tag)
         {
-            case "1":
+            case "Enemy":
                 Destroy(this.gameObject);
                 break;
         }
