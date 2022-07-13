@@ -75,6 +75,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullet_Lv4
       objectReference: {fileID: 0}
+    - target: {fileID: 5862485819627569225, guid: b6e1909f13bd2554ca90709668bc2661, type: 3}
+      propertyPath: m_TagString
+      value: Player_Bullet_4
+      objectReference: {fileID: 0}
     - target: {fileID: 5959228224262379371, guid: b6e1909f13bd2554ca90709668bc2661, type: 3}
       propertyPath: m_Sprite
       value: 

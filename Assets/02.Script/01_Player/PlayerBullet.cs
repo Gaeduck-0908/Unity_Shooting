@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Lib;
 
-public class PlayerBullet : MonoBehaviour
+public class PlayerBullet : Singleton<PlayerBullet>
 {
     // TODO
     // 플레이어의 총알 관련 코드 작성바람 
@@ -16,6 +17,21 @@ public class PlayerBullet : MonoBehaviour
 
     // 총알의 스피드
     public float Bullet_Speed = 10.0f;
+
+    // 현재총알의 레벨
+    public int Bullet_Lv;
+
+    // 시작시
+    private void Start()
+    {
+        Bullet_dmg_Lv1 = 5;
+        Bullet_dmg_Lv2 = 10;
+        Bullet_dmg_Lv3 = 20;
+        Bullet_dmg_Lv4 = 50;
+        Bullet_dmg_Lv5 = 100;
+
+        Bullet_Lv = 1;
+    }
 
     // 프레임단위 실행
     private void Update()
@@ -34,6 +50,7 @@ public class PlayerBullet : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+
 
     // 총알의 충돌판정
     private void OnTriggerEnter2D(Collider2D col)

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5685908476807118931}
   m_Layer: 0
   m_Name: Bullet_Lv1
-  m_TagString: Untagged
+  m_TagString: Player_Bullet_1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,3 +142,4 @@ MonoBehaviour:
   Bullet_dmg_Lv4: 0
   Bullet_dmg_Lv5: 0
   Bullet_Speed: 10
+  Bullet_Lv: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 995239433349900126}
   - component: {fileID: 8610464976847021549}
   - component: {fileID: 4914341752503763654}
+  - component: {fileID: 3248356877028673160}
   m_Layer: 0
   m_Name: Boss_1
   m_TagString: Enemy
@@ -111,3 +112,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4977636, y: 1.0776376}
   m_EdgeRadius: 0
+--- !u!50 &3248356877028673160
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7586518438971937085}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

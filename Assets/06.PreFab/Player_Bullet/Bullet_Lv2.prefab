@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullet_Lv2
       objectReference: {fileID: 0}
+    - target: {fileID: 1893815791439973912, guid: 0ee85aef12449e34092e9f5597fde347, type: 3}
+      propertyPath: m_TagString
+      value: Player_Bullet_2
+      objectReference: {fileID: 0}
     - target: {fileID: 7689749704191326136, guid: 0ee85aef12449e34092e9f5597fde347, type: 3}
       propertyPath: m_Radius
       value: 0.45861375

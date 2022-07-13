@@ -24,11 +24,11 @@ public class EnemyManager : Singleton<EnemyManager>
     public void Enemy_Spawn()
     {
         float randomPos = Random.Range(-2.5f, 2.5f);
-        float random = Random.Range(0, Enemy.Length - 1);
+        float random = Random.Range(0, Enemy.Length);
 
         if (Enemy_death_count <= 29)
         {
-            Instantiate(Enemy[(int)random], new Vector3(randomPos, 8, 0), transform.rotation);
+            Instantiate(Enemy[(int)random], new Vector3(randomPos, 4.5f, 0), transform.rotation);
         }
         else if (Enemy_death_count == 30)
         {

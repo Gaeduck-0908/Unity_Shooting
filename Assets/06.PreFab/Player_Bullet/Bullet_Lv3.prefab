@@ -27,6 +27,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullet_Lv3
       objectReference: {fileID: 0}
+    - target: {fileID: 3995964213421333673, guid: 2b46e357375427a4782a354306bb69e7, type: 3}
+      propertyPath: m_TagString
+      value: Player_Bullet_3
+      objectReference: {fileID: 0}
     - target: {fileID: 5064137699907097610, guid: 2b46e357375427a4782a354306bb69e7, type: 3}
       propertyPath: m_RootOrder
       value: 0

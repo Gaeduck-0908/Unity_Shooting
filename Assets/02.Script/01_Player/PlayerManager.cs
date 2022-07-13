@@ -14,7 +14,7 @@ public class PlayerManager : Singleton<PlayerManager>
     public int Player_Hp;
 
     // 플레이어의 속도
-    private float Player_Speed = 10f;
+    private float Player_Speed = 7f;
 
     // 플레이어의 무적모드
     private bool Player_God;

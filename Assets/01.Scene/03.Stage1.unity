@@ -939,12 +939,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609304719}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 516c73260104c2f47b1d17d449cb0fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: []
+  Enemy:
+  - {fileID: 6067774847622884975, guid: 5f0e94319c0a3c84b83f66d12ecd210d, type: 3}
+  - {fileID: 7488863107978394818, guid: 4a434885c8b1aa64688dc20c793c3eef, type: 3}
+  - {fileID: 2258223235256407742, guid: 61a9d27a487f6e6498c1ba4651dea286, type: 3}
   Enemy_death_count: 0
 --- !u!1 &1806376266
 GameObject:
@@ -1200,7 +1203,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -15}

@@ -63,5 +63,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullet_Lv5
       objectReference: {fileID: 0}
+    - target: {fileID: 8331535993409787022, guid: c84ad5bfab8d99e4da0494d1709bf1f4, type: 3}
+      propertyPath: m_TagString
+      value: Player_Bullet_5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c84ad5bfab8d99e4da0494d1709bf1f4, type: 3}
